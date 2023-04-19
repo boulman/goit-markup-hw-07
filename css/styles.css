@@ -97,17 +97,21 @@ body {
   color: var(--color-navy-blue);
 }
 
+
 .address {
   font-style: normal;
 }
 
 .nav-link,
 .address-link {
-  color: var(--color-navy-blue);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--color-navy-blue);
 }
 
 .nav-link:hover,
@@ -126,6 +130,10 @@ body {
   color: var(--color-cloud);
 }
 
+.logo-studio-ftr {
+  color: var(--color-cloud);
+}
+
 /* HERO */
 .hero {
   background-color: var(--color-navy-blue);
@@ -137,6 +145,7 @@ body {
   line-height: 1.07;
   text-align: center;
   color: var(--color-white);
+  letter-spacing: 0.02em;
 }
 
 /* FEATURE */
