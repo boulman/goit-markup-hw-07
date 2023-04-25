@@ -19,6 +19,15 @@ body {
   background-color: var(--color-white);
 }
 
+h1, h2, h3, h4, h5, h6, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -78,9 +87,30 @@ body {
   letter-spacing: 0.02em;
 }
 
+.container{  
+  width: 1158px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 .hdr {
-  border-bottom: 1px solid var(--color-cornflower);
+  border-bottom: 1px solid var(--color-cornflower);    
+}
+
+.hdr-container{
+  height: 72px;
+  display: flex;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list{
+  display: flex;
+  gap: 0 40px; 
+  margin-right: 320px;
 }
 
 .logo {
@@ -91,16 +121,23 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  margin-right: 76px;
 }
 
 .logo-studio {
   color: var(--color-navy-blue);
 }
 
-
 .address {
   font-style: normal;
+  margin: auto;  
 }
+
+.address-list{
+  display: flex;
+  gap: 0 40px;
+}
+
 
 .nav-link,
 .address-link {
@@ -123,11 +160,24 @@ body {
 
 /* FOOTER */
 .ftr {
-  background-color: var(--color-navy-blue);
+  background-color: var(--color-navy-blue);    
+}
+
+
+.ftr-webstudio-container{  
+  width: 264px;
+  display: flex;
+  flex-direction: column;  
+  padding: 100px 0;
+  height: 100%;
 }
 
 .ftr-txt {
   color: var(--color-cloud);
+}
+
+.logo-ftr{
+  margin-bottom: 16px;
 }
 
 .logo-studio-ftr {

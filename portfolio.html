@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Portfolio</title>
 </head>
@@ -16,133 +19,129 @@
 <body>
   <!-- HEADER -->
   <header class="hdr">
-    <nav>
-      <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span></a>
-      <ul class="list">
-        <li><a href="./index.html" class="link nav-link">Studio</a></li>
-        <li>
-          <a href="./portfolio.html" class="link nav-link">Portfolio</a>
-        </li>
-        <li><a href="" class="link nav-link">Contacts</a></li>
-      </ul>
-    </nav>
-
-    <address class="address">
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link address-link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+110001111111" class="link address-link">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </address>
+    <div class="container hdr-container">
+      <nav>
+        <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span></a>
+        <ul class="list nav-list">
+          <li><a href="./index.html" class="link nav-link">Studio</a></li>
+          <li>
+            <a href="./portfolio.html" class="link nav-link">Portfolio</a>
+          </li>
+          <li><a href="" class="link nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="list address-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link address-link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="link address-link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
   </header>
 
   <!-- Our works -->
   <main>
-    <section class="our-works">
-      <h1 class="visually-hidden" hidden>Our works</h1>
-      <ul class="filter list">
-        <li class="filter-item">
-          <button class="btn filter-btn" type="button">All</button>
-        </li>
-        <li class="filter-item">
-          <button class="btn filter-btn" type="button">Web Site</button>
-        </li>
-        <li class="filter-item">
-          <button class="btn filter-btn" type="button">App</button>
-        </li>
-        <li class="filter-item">
-          <button class="btn filter-btn" type="button">Design</button>
-        </li>
-        <li class="filter-item">
-          <button class="btn filter-btn" type="button">Marketing</button>
-        </li>
-      </ul>
-
-      <ul class="list works-rows">
-
-        <li class="work-tamplate">
-          <a href="" class="link">
-            <img src="./images/works/img-8.jpg" alt="Banking App Interface Concept" class="work-img" />
-            <h2 class="small-title">Banking App Interface Concept</h2>
-            <p class="feature-p">App</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link">
-            <img src="./images/works/img-7.jpg" alt="Cashless Payment" class="work-img" />
-            <h2 class="small-title">Cashless Payment</h2>
-            <p class="feature-p">Marketing</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link">
-            <img src="./images/works/img-6.jpg" alt="Meditation App" class="work-img" />
-            <h2 class="small-title">Meditation App</h2>
-            <p class="feature-p">App</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link"><img src="./images/works/img-5.jpg" alt="Taxi Service" class="work-img" />
-            <h2 class="small-title">Taxi Service</h2>
-            <p class="feature-p">Marketing</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link"><img src="./images/works/img-4.jpg" alt="Screen Illustrations" class="work-img" />
-            <h2 class="small-title">Screen Illustrations</h2>
-            <p class="feature-p">Design</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link"><img src="./images/works/img-3.jpg" alt="Online Courses" class="work-img" />
-            <h2 class="small-title">Online Courses</h2>
-            <p class="feature-p">Marketing</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link"><img src="./images/works/img-2.jpg" alt="Instagram Stories Concept"
-              class="work-img" />
-            <h2 class="small-title">Instagram Stories Concept</h2>
-            <p class="feature-p">Design</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link">
-            <img src="./images/works/img-1.jpg" alt="Organic Food" class="work-img" />
-            <h2 class="small-title">Organic Food</h2>
-            <p class="feature-p">Web Site</p>
-          </a>
-        </li>
-
-        <li class="work-tamplate">
-          <a href="" class="link"><img src="./images/works/img.jpg" alt="Fresh Coffee" class="work-img" />
-            <h2 class="small-title">Fresh Coffee</h2>
-            <p class="feature-p">Web Site</p>
-          </a>
-        </li>
-
-      </ul>
+    <section class="our-works"><div class="container">
+      
+        <h1 class="visually-hidden" hidden>Our works</h1>
+        <ul class="filter list">
+          <li class="filter-item">
+            <button class="btn filter-btn" type="button">All</button>
+          </li>
+          <li class="filter-item">
+            <button class="btn filter-btn" type="button">Web Site</button>
+          </li>
+          <li class="filter-item">
+            <button class="btn filter-btn" type="button">App</button>
+          </li>
+          <li class="filter-item">
+            <button class="btn filter-btn" type="button">Design</button>
+          </li>
+          <li class="filter-item">
+            <button class="btn filter-btn" type="button">Marketing</button>
+          </li>
+        </ul>
+        <ul class="list works-rows ">
+          <li class="work-tamplate">
+            <a href="" class="link">
+              <img src="./images/works/img-8.jpg" alt="Banking App Interface Concept" class="work-img" />
+              <h2 class="small-title">Banking App Interface Concept</h2>
+              <p class="feature-p">App</p>
+            </a>
+          </li>
+          <li class="work-tamplate ">
+            <a href="" class="link">
+              <img src="./images/works/img-7.jpg" alt="Cashless Payment" class="work-img" />
+              <h2 class="small-title">Cashless Payment</h2>
+              <p class="feature-p">Marketing</p>
+            </a>
+          </li>
+          <li class="work-tamplate">
+            <a href="" class="link">
+              <img src="./images/works/img-6.jpg" alt="Meditation App" class="work-img" />
+              <h2 class="small-title">Meditation App</h2>
+              <p class="feature-p">App</p>
+            </a>
+          </li>
+          <li class="work-tamplate ">
+            <a href="" class="link"><img src="./images/works/img-5.jpg" alt="Taxi Service" class="work-img" />
+              <h2 class="small-title">Taxi Service</h2>
+              <p class="feature-p">Marketing</p>
+            </a>
+          </li>
+          <li class="work-tamplate ">
+            <a href="" class="link"><img src="./images/works/img-4.jpg" alt="Screen Illustrations" class="work-img" />
+              <h2 class="small-title">Screen Illustrations</h2>
+              <p class="feature-p">Design</p>
+            </a>
+          </li>
+          <li class="work-tamplate ">
+            <a href="" class="link"><img src="./images/works/img-3.jpg" alt="Online Courses" class="work-img" />
+              <h2 class="small-title">Online Courses</h2>
+              <p class="feature-p">Marketing</p>
+            </a>
+          </li>
+          <li class="work-tamplate">
+            <a href="" class="link"><img src="./images/works/img-2.jpg" alt="Instagram Stories Concept"
+                class="work-img" />
+              <h2 class="small-title">Instagram Stories Concept</h2>
+              <p class="feature-p">Design</p>
+            </a>
+          </li>
+          <li class="work-tamplate">
+            <a href="" class="link">
+              <img src="./images/works/img-1.jpg" alt="Organic Food" class="work-img" />
+              <h2 class="small-title">Organic Food</h2>
+              <p class="feature-p">Web Site</p>
+            </a>
+          </li>
+          <li class="work-tamplate">
+            <a href="" class="link"><img src="./images/works/img.jpg" alt="Fresh Coffee" class="work-img" />
+              <h2 class="small-title">Fresh Coffee</h2>
+              <p class="feature-p">Web Site</p>
+            </a>
+          </li>
+        </ul>
+    </div>
 
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="ftr">
-    <a href="./index.html" class="logo link">Web<span class="logo-studio logo-studio-ftr">Studio</span></a>
-    <p class="ftr-txt">
-      Increase the flow of customers and sales for your business with digital
-      marketing & growth solutions.
-    </p>
+    <div class="container ftr-container">
+      <div class="ftr-webstudio-container">
+        <a href="./index.html" class="logo link logo-ftr">Web<span class="logo-studio logo-studio-ftr">Studio</span></a>
+        <p class="ftr-txt">
+          Increase the flow of customers and sales for your business with digital
+          marketing & growth solutions.
+        </p>
+      </div>
+    </div>
   </footer>
 </body>
 
