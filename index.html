@@ -20,7 +20,7 @@
     <!-- HEADER -->
     <header class="hdr">
       <div class="container hdr-container">
-        <nav>
+        <nav class="nav">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-studio">Studio</span></a
           >
@@ -53,7 +53,7 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="btn hero-btn">Order Service</button>
         </div>
@@ -63,7 +63,7 @@
       <section class="feature">
         <div class="container">
           <h2 class="visually-hidden" hidden>Features</h2>
-          <ul class="list">
+          <ul class="list feature-list">
             <li class="feature-item">
               <h3 class="small-title">Strategy</h3>
               <p class="feature-p">
@@ -100,8 +100,8 @@
       <section class="doings">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
-          <ul class="list">
-            <li>
+          <ul class="list doings-list">
+            <li class="doings-item">
               <img
                 src="./images/doings/analytics.jpg"
                 alt="Analytics"
@@ -109,7 +109,7 @@
                 width="360"
               />
             </li>
-            <li>
+            <li class="doings-item">
               <img
                 src="./images/doings/support.jpg"
                 alt="Support"
@@ -117,7 +117,7 @@
                 width="360"
               />
             </li>
-            <li>
+            <li class="doings-item">
               <img
                 src="./images/doings/design.jpg"
                 alt="Design"
@@ -133,20 +133,25 @@
       <section class="team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="list">
+          <ul class="list team-list">
             <li class="team-item">
               <img
                 src="./images/team/img-3.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
-              <h3 class="small-title">Mark Guerrero</h3>
-              <p class="feature-p">Product Designer</p>
+              <div class="team-item-desc"> class="doings-item"
+                <h3 class="small-title">Mark Guerrero</h3>
+                <p class="feature-p">Product Designer</p>
+              </div>              
             </li>
             <li class="team-item">
               <img src="./images/team/img-2.jpg" alt="Tom Ford" width="264" />
-              <h3 class="small-title">Tom Ford</h3>
+              <div class="team-item-desc">
+                <h3 class="small-title">Tom Ford</h3>
               <p class="feature-p">Frontend Developer</p>
+              </div>
+              
             </li>
             <li class="team-item">
               <img
@@ -154,13 +159,19 @@
                 alt="Camila Garcia"
                 width="264"
               />
-              <h3 class="small-title">Camila Garcia</h3>
-              <p class="feature-p">Marketing</p>
+              <div class="team-item-desc">
+                <h3 class="small-title">Camila Garcia</h3>
+                <p class="feature-p">Marketing</p>
+              </div>
+              
             </li>
             <li class="team-item">
               <img src="./images/team/img.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="small-title">Daniel Wilson</h3>
-              <p class="feature-p">UI Designer</p>
+              <div class="team-item-desc">
+                <h3 class="small-title">Daniel Wilson</h3>
+                <p class="feature-p">UI Designer</p>
+              </div>
+              
             </li>
           </ul>
         </div>
@@ -169,8 +180,7 @@
 
     <!-- FOOTER -->
     <footer class="ftr">
-      <div class="container ftr-container">
-        <div class="ftr-webstudio-container">
+      <div class="container ftr-container">        
           <a href="./index.html" class="logo link logo-ftr"
             >Web<span class="logo-studio logo-studio-ftr">Studio</span></a
           >
@@ -178,7 +188,7 @@
             Increase the flow of customers and sales for your business with digital
             marketing & growth solutions.
           </p>
-        </div>
+        
       </div>
     </footer>
   </body>
