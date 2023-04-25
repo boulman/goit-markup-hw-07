@@ -62,9 +62,7 @@ img{
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 16px 32px;
-  display: block;
-  min-width: 169px;
-  height: 56px;
+  display: block;  
   border: 0;
 }
 
@@ -193,9 +191,6 @@ nav{
 /* HERO */
 .hero {
   background-color: var(--color-navy-blue);
-}
-
-.hero-container{
   padding: 188px 0;
 }
 
@@ -212,6 +207,8 @@ nav{
 
 .hero-btn{
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
 }
 
 /* FEATURE */
@@ -234,10 +231,14 @@ nav{
 }
 
 /* DOINGS */
+.doings{
+  padding-bottom: 120px;
+}
+
 .doings-list{
   display: flex;
   gap: 24px;
-  margin: 0 auto 120px;
+  margin: 0 auto;
 }
 
 .doings-item{
@@ -263,7 +264,7 @@ nav{
 }
 
 .team-item-desc{
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -284,6 +285,12 @@ nav{
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
   color: var(--color-iris);
+  padding: 12px 24px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+  border: 1px solid transparent;
 }
 
 .works-list{
