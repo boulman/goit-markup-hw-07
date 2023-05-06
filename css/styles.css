@@ -179,7 +179,13 @@ nav{
 
 .ftr-container{
   display: flex;
+  align-items: baseline;
   gap: 120px;
+}
+
+.ftr-logo-container{
+  display: block;
+  margin-right: 120px;
 }
 
 .ftr-txt {
@@ -195,10 +201,10 @@ nav{
 .logo-studio-ftr {
   color: var(--color-cloud);
 }
-
+/* 
 .ftr-socials{
   margin-right: 120px;
-}
+} */
 
 .socials-txt{
   margin-bottom:16px;
@@ -396,6 +402,11 @@ nav{
 .social-icon-link:hover,
 .social-icon-link:focus{
   background-color: var(--color-ocean);
+}
+
+.social-icon-container .social-icon-link:hover,
+.social-icon-container .social-icon-link:focus{
+  background-color: var(--color-green);
 }
 
 .social-icon{
