@@ -100,7 +100,10 @@ img{
 
 /* HEADER */
 .hdr {
-  border-bottom: 1px solid var(--color-cornflower);    
+  border-bottom: 1px solid var(--color-cornflower);  
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);  
 }
 
 .hdr-container{
@@ -173,12 +176,12 @@ nav{
   background-color: var(--color-navy-blue); 
   padding: 100px 0;
   display: flex;
-  gap: 120px;
 }
 
 .ftr-container{
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 
 .ftr-txt {
@@ -195,9 +198,19 @@ nav{
   color: var(--color-cloud);
 }
 
+.ftr-socials{
+  margin-right: 120px;
+}
+
 .socials-txt{
   margin-bottom:16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
 }
+
 
 /* HERO */
 .hero {
@@ -206,7 +219,8 @@ nav{
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
+  min-width: 1440px;
 }
 
 .hero-title {
@@ -254,6 +268,7 @@ nav{
   width: 264px;
   height: 112px;
   background-color: var(--color-cloud);
+  border-radius: 4px;
 }
 
 /* DOINGS */
@@ -280,6 +295,7 @@ nav{
 .team-list{
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-item {
@@ -290,7 +306,7 @@ nav{
 }
 
 .team-item-desc{
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -318,7 +334,9 @@ nav{
 .filter-btn:hover,
 .filter-btn:focus{
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .works-list{
@@ -348,25 +366,31 @@ nav{
 .socials-list{
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
-.social-icon-container{
+.social-icon-container{  
+  width: 40px;
+  height: 40px;  
+}
+
+.social-icon-link{
+  width: 100%;
+  height: 100%;
   background-color: var(--color-iris);
   border-radius: 50% 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-icon-container:hover,
-.social-icon-container:focus{
+.social-icon-link:hover,
+.social-icon-link:focus{
   background-color: var(--color-green);
 }
 
 .social-icon{
-  fill: var(--color-white);
+  fill: var(--color-cloud);
 }
 
 /* Customers */
