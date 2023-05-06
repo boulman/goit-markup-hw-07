@@ -175,16 +175,11 @@ nav{
 .ftr {
   background-color: var(--color-navy-blue); 
   padding: 100px 0;
-  display: flex;
 }
 
 .ftr-container{
   display: flex;
-  margin-right: 120px;
-  margin-left: 156px;
-  flex-direction: column;
-
-  align-items: baseline;
+  gap: 120px;
 }
 
 .ftr-txt {
@@ -411,6 +406,10 @@ nav{
 .customers{
   padding: 120px 0;
   margin: 0 auto;
+}
+
+.customers-title{
+  line-height: 1.1;
 }
 
 .customers-list{
