@@ -53,7 +53,7 @@ img{
 .btn {
   cursor: pointer;
   background-color: var(--color-iris);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   color: var(--color-white);
   font-family: inherit;
@@ -172,6 +172,13 @@ nav{
 .ftr {
   background-color: var(--color-navy-blue); 
   padding: 100px 0;
+  display: flex;
+  gap: 120px;
+}
+
+.ftr-container{
+  display: flex;
+  gap: 120px;
 }
 
 .ftr-txt {
@@ -188,10 +195,18 @@ nav{
   color: var(--color-cloud);
 }
 
+.socials-txt{
+  margin-bottom:16px;
+}
+
 /* HERO */
 .hero {
   background-color: var(--color-navy-blue);
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .hero-title {
@@ -219,6 +234,7 @@ nav{
 .feature-p {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .feature-list{
@@ -228,6 +244,16 @@ nav{
 
 .feature-item{
   flex-basis: calc((100% - 3 * 24px) / 4 );
+}
+
+.feature-icon-container{
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--color-cloud);
 }
 
 /* DOINGS */
@@ -268,6 +294,7 @@ nav{
   text-align: center;
 }
 
+
 /* PORTFOLIO */
 .our-works{
   padding: 96px 0 120px;
@@ -291,6 +318,7 @@ nav{
 .filter-btn:hover,
 .filter-btn:focus{
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works-list{
@@ -304,9 +332,76 @@ nav{
   width: calc((100% - 48px) / 3);
 }
 
+.work-tamplate:hover,
+.work-tamplate:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .work-desc{
   padding: 32px 16px;
   background: var(--color-white);
   border: 1px solid var(--color-cornflower);
   border-top: none;
 }
+
+/* SOCIAL ICONS */
+.socials-list{
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon-container{
+  background-color: var(--color-iris);
+  border-radius: 50% 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-container:hover,
+.social-icon-container:focus{
+  background-color: var(--color-green);
+}
+
+.social-icon{
+  fill: var(--color-white);
+}
+
+/* Customers */
+.customers{
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.customers-list{
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;  
+}
+
+.customers-logo-container{
+  padding: 16px 32px;
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-slate);
+}
+
+.customers-logo-container:hover,
+.customers-logo-container:focus{  
+  border: 1px solid var(--color-ocean);
+  color: var(--color-ocean);
+}
+
+.customers-logo{
+  fill: currentColor;
+}
+/* 
+.customers-logo:hover,
+.customers-logo:focus {
+  fill: var(--color-ocean);
+} */
