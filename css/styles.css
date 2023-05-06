@@ -404,8 +404,8 @@ nav{
   background-color: var(--color-ocean);
 }
 
-.social-icon-container .social-icon-link:hover,
-.social-icon-container .social-icon-link:focus{
+.ftr-socials .social-icon-link:hover,
+.ftr-socials .social-icon-link:focus{
   background-color: var(--color-green);
 }
 
