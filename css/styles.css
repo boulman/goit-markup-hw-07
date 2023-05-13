@@ -560,6 +560,9 @@ nav{
 }
 
 .close{
+  padding: 0;
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,10 +572,13 @@ nav{
   position: absolute;
   top: 24px;
   right: 24px;
-  background: var(--color-cornflower);
+  background-color: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: var(--color-navy-blue);
+  transition-property: color, background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -581,8 +587,12 @@ nav{
 .close:focus{
   background-color: var(--color-ocean);
   color: var(--color-white);
+  border: none;
 }
 
 .close-icon{  
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
