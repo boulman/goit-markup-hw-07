@@ -354,7 +354,7 @@
     </footer>
 
     <!-- Backdrop -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
 
         <button type="button" class="close" data-modal-close>
@@ -391,12 +391,16 @@
             <textarea name="user_name" class="modal-textarea" placeholder="Text input"></textarea>
           </label>  
           
-          <input type="checkbox" name="policy-check" id="policy-check" required hidden>
-          <svg class="check-icon" width="16" height="16">
-            <use href="./images/icons.svg#unchecked" class="check-icon-unchecked"></use>
-            <use href="./images/icons.svg#checked" class="check-icon-checked"></use>
-          </svg>
-          <label for="policy-check" class="modal-input-label">I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a></label>
+                    
+          <label for="policy-check" class="modal-input-label modal-policy-label">
+            <input type="checkbox" name="policy-check" id="policy-check" required hidden>
+            <div class="check-box">
+              <svg class="check-icon-checked" width="10" height="8">
+                <use href="./images/icons.svg#check" class="check-icon-checked"></use>
+              </svg>
+            </div>
+                  
+            I accept the terms and conditions of the <a href="" class="policy-link">Privacy Policy</a></label>
 
           <button class="btn hero-btn">Send</button>
         </form>
