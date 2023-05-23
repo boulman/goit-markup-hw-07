@@ -658,13 +658,10 @@ nav{
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 24px;
 }
 
-.modal-policy-label:focus-within{
-  outline: 1px solid var(--color-ocean);
-  outline-offset: 1px;
-  border-radius: 1px;
-}
+
 
 .check-box{
   width: 16px;
@@ -686,6 +683,12 @@ nav{
 #policy-check:checked ~ .check-box{
   background-color: var(--color-ocean);
   border: none;
+}
+
+#policy-check:focus + .modal-policy-label{
+  outline: 1px solid var(--color-ocean);
+  outline-offset: 1px;
+  border-radius: 1px;
 }
 
 
