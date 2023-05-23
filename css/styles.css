@@ -510,6 +510,7 @@ nav{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden .modal{
@@ -551,7 +552,7 @@ nav{
 }
 
 .modal-form{
-  padding: 16px 24px 24px;
+  
 
 }
 
@@ -562,8 +563,8 @@ nav{
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-navy-blue);
-  margin-top: 72px;
+  color: var(--color-navy-blue);  
+  margin-bottom: 16px;
 }
 
 .modal-input-label {
@@ -642,11 +643,27 @@ nav{
 }
 
 
+.modal-textarea-label{
+  margin-bottom: 16px;
+  
+}
+
 .modal-policy-label{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height:1.17;
+  letter-spacing: 0.04em;  
+  color: var(--color-light-slate);
   display: flex;
-  align-items: center;  
+  align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
+}
+
+.modal-policy-label:focus-within{
+  outline: 1px solid var(--color-ocean);
+  outline-offset: 1px;
+  border-radius: 1px;
 }
 
 .check-box{
@@ -662,10 +679,15 @@ nav{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.check-box:focus{
+  outline: 1px solid var(--color-navy-blue);
+}
+
 #policy-check:checked ~ .check-box{
   background-color: var(--color-ocean);
   border: none;
 }
+
 
 /* FOOTER */
 .ftr {
@@ -684,6 +706,7 @@ nav{
 .ftr-txt {
   color: var(--color-cloud);
   max-width: 264px;
+  letter-spacing: 0.02em;
 }
 
 .logo-ftr {
